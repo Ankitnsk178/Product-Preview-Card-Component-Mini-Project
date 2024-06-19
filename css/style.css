@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --Darkcyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Verydarkblue: hsl(212, 21%, 14%);
+    --Darkgrayishblue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+}
+
+.container{
+    background-color: #f3eae3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.card{
+    display: flex;
+    height: auto;
+    width: 50rem;
+    background-color: var(--White);
+    border-radius: 0.6rem;
+    overflow: hidden;
+}
+
+.left_container{
+    width: 50%;
+}
+
+.image_pc{
+    height: 100%;
+    width: 100%;
+}
+
+.image_desktop{
+    display: none;
+    height: 100%;
+    width: 100%;
+}
+
+.right_container{
+    height: 100%;
+    width: 50%;
+    padding: 2.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+
+.heading{
+    color: var(--Darkgrayishblue);
+    letter-spacing: 0.4rem;
+}
+
+.bold{
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 2.8rem;
+}
+
+.desc{
+    color: var(--Darkgrayishblue);
+    line-height: 1.5rem;
+    letter-spacing: 0.1rem;
+}
+
+.price{
+    padding: 1rem;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.current{
+    color: var(--Darkcyan);
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+strike{
+    color: var(--Darkgrayishblue);
+}
+
+.button{
+    background-color: var(--Darkcyan);
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    gap: 1rem;
+    color: var(--White);
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.button:active{
+    background-color: rgb(26, 64, 49);
+}
+
+@media (max-width:768px){
+    body{
+        background-color: #f3eae3;
+    }
+    .container{
+        padding: 2rem;
+        align-items: flex-start;
+        height: 100%;
+    }
+
+    .card{
+        flex-direction: column;
+    }
+
+    .image_desktop{
+        display: block;
+    }
+
+    .image_pc{
+        display: none;
+    }
+
+    .left_container{
+        width: 100%;
+    }
+
+    .right_container{
+        width: 100%;
+    }
+}
